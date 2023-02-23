@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows:
+    15vh
+    1fr
+    8vh;
+}
