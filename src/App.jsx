@@ -4,13 +4,13 @@ import { Route, Routes } from 'react-router-dom';
 
 import Footer from './components/Footer';
 import Header from './components/Header/Header';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import Layout from './Layout/Layout';
 import NotFound from './Pages//NotFound/NotFound';
 import About from './Pages/About/About';
 import Company from './Pages/Company/Company';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
-// import ProtectedRoute from './components/ProtectedRoute'
 
 const App = () => {
   return (
@@ -24,9 +24,9 @@ const App = () => {
         <Route
           path="/Company"
           element={
-            // <ProtectedRoute>
-            <Company />
-            // </ProtectedRoute>
+            <ProtectedRoute>
+              <Company />
+            </ProtectedRoute>
           }
         />
       </Routes>
