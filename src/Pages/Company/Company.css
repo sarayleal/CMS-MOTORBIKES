@@ -1,0 +1,78 @@
+.Company {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #9cb494;
+  }
+  
+  .Company div:first-of-type {
+    width: 60%;
+  }
+  
+  .Company div:last-of-type {
+    width: 35%;
+  }
+  
+  .MotoCard {
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .MotoCard img {
+    max-width: 100%;
+  }
+  
+  input,
+  select {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  button {
+    background-color: transparent;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: #555;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 1rem;
+  }
+  
