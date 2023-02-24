@@ -10,13 +10,18 @@ const Login = () => {
   const { login } = useContext(UserContext);
 
   return (
-    <main className="Login">
-      <div className="DivLogin">
-        <h3>Usuario</h3>
-        <input type="text" placeholder="Username" ref={inputRef} />
-        <h3>contraseña</h3>
-        <input type="password" placeholder="Password" ref={inputPassRef} />
-        <button
+    <main className="container">
+      <div className="card">
+        <h1 className="login">Log in</h1>
+        <div className="inputBox">
+          <input type="text" ref={inputRef} required/>
+          <span>Username</span>
+        </div>
+        <div className="inputBox">
+          <input type="password" ref={inputPassRef} required/>
+          <span>Password</span>
+        </div>
+        <button className="enter"
           onClick={() =>
             inputRef.current.value &&
             inputPassRef.current.value &&

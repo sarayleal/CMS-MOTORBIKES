@@ -22,7 +22,7 @@ const Header = () => {
             <NavLink to="/About">About</NavLink>
           </li>
           <li>
-            <button onClick={() => toggleTheme()}>☀️</button>
+            <input type="checkbox" className="modeTheme" onChange={() => toggleTheme()} />
           </li>
         </ul>
         {user && <button onClick={() => logout()}>Logout</button>}
