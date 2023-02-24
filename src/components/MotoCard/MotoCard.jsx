@@ -9,6 +9,7 @@ const MotoCard = ({ moto }) => {
       <h3>{moto.fuel}</h3>
       <h3>{moto.type}</h3>
       <h3>{moto.carnet}</h3>
+      <h3>{moto.company}</h3>
     </figure>
   );
 };

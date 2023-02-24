@@ -1,10 +1,10 @@
 import './Company.css';
 
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
+import { UserContext } from '../../components/context/userContext';
 import InputCreate from '../../components/InputCreate';
 import InputEdit from '../../components/InputEdit';
-/* import { UserContext } from '../../components/context/userContext'; */
 import MotoCard from '../../components/MotoCard/MotoCard';
 import SelectCreate from '../../components/SelectCreate';
 import SelectEdit from '../../components/SelectEdit';
@@ -12,6 +12,7 @@ import { carnet, fuel, type, typesText } from '../../data/data.js';
 
 const Company = () => {
   //GET
+  const { user } = useContext(UserContext);
   const [motos, setMotos] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(null);
@@ -46,7 +47,8 @@ const Company = () => {
   const getMotos = async () => {
     const res = await fetch('https://63ed61e93d9c852c3f59f7e0.mockapi.io/motos');
     const data = await res.json();
-    setMotos(data);
+    const filteredMotos = await data.filter((moto) => moto.company === user);
+    setMotos(filteredMotos);
     setLoaded(true);
   };
   //CREATE
@@ -113,7 +115,6 @@ const Company = () => {
     getMotos();
   }, []);
 
-  /*  const { user } = useContext(UserContext); */
   return (
     <main className="Company">
       <div>
