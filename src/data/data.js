@@ -12,11 +12,12 @@ export const typesText = [
 
 export const typesSelect = ['carnet', 'fuel', 'type'];
 
-export const fuel = ['gas', 'diesel', 'electric'];
+export const fuel = ['-', 'gas', 'diesel', 'electric'];
 
-export const carnet = ['a1', 'a2', 'b', 'a'];
+export const carnet = ['-', 'a1', 'a2', 'b', 'a'];
 
 export const type = [
+  '-',
   'naked',
   'custom',
   'scooter',
