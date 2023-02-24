@@ -15,24 +15,25 @@ header nav ul {
 }
 
 .modeTheme {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0.75em;
-  box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
   color: #fdea7b;
   display: inline-flex;
   align-items: center;
   margin: auto;
   padding: 0.15em;
   width: 1.8em;
-  height: .9em;
+  height: 0.9em;
   transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.modeTheme:before, .modeTheme:after {
-  content: "";
+.modeTheme:before,
+.modeTheme:after {
+  content: '';
   display: block;
 }
 
@@ -46,9 +47,10 @@ header nav ul {
 }
 
 .modeTheme:after {
-  background: linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
-		repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
-		radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50% / 50% 100%,
+    repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50% /
+      50% 100%,
+    radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
   background-repeat: no-repeat;
   border: 0.25em solid transparent;
   border-left: 0.4em solid #d8d8d8;
@@ -62,13 +64,13 @@ header nav ul {
 }
 /* Checked */
 .modeTheme:checked {
-  background-color: rgba(0,0,0,0.45);
-  box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
 }
 
 .modeTheme:checked:before {
   background-color: currentColor;
-  transform: translateX(125%)
+  transform: translateX(125%);
 }
 
 .modeTheme:checked:after {
@@ -77,6 +79,6 @@ header nav ul {
 }
 /* Other States */
 .modeTheme:focus {
-	/* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+  /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
   outline: 0;
 }

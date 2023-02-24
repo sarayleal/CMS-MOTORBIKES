@@ -14,14 +14,15 @@ const Login = () => {
       <div className="card">
         <h1 className="login">Log in</h1>
         <div className="inputBox">
-          <input type="text" ref={inputRef} required/>
+          <input type="text" ref={inputRef} required />
           <span>Username</span>
         </div>
         <div className="inputBox">
-          <input type="password" ref={inputPassRef} required/>
+          <input type="password" ref={inputPassRef} required />
           <span>Password</span>
         </div>
-        <button className="enter"
+        <button
+          className="enter"
           onClick={() =>
             inputRef.current.value &&
             inputPassRef.current.value &&
