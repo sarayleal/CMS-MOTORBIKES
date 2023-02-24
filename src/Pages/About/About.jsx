@@ -21,6 +21,10 @@ const About = () => {
           <img src="" alt="" />
           <h3>Jesús</h3>
         </li>
+        <li>
+          <img src="" alt="" />
+          <h3>Aura</h3>
+        </li>
       </ul>
     </main>
   );
