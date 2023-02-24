@@ -3,12 +3,12 @@ import './Company.css';
 import { useEffect, useState } from 'react';
 
 import InputCreate from '../../components/InputCreate';
+import InputEdit from '../../components/InputEdit';
 /* import { UserContext } from '../../components/context/userContext'; */
 import MotoCard from '../../components/MotoCard/MotoCard';
 import SelectCreate from '../../components/SelectCreate';
-import { carnet, fuel, type, typesText } from '../../data/data.js';
-import InputEdit from '../../components/InputEdit';
 import SelectEdit from '../../components/SelectEdit';
+import { carnet, fuel, type, typesText } from '../../data/data.js';
 
 const Company = () => {
   //GET
