@@ -11,6 +11,7 @@ import About from './Pages/About/About';
 import Company from './Pages/Company/Company';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
+import MotoDetails from './Pages/MotoDetails/MotoDetails';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/Login" element={<Login />} />
         <Route path="/About" element={<About />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/Home/:id" element={<MotoDetails />} />
         <Route
           path="/Company"
           element={
