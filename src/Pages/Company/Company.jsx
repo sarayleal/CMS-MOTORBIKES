@@ -27,7 +27,7 @@ const Company = () => {
     price: '',
     cc: '',
     carnet: '',
-    company: '',
+    company: user,
     fuel: '',
   });
   const [editMoto, setEditMoto] = useState({
@@ -44,6 +44,7 @@ const Company = () => {
     company: '',
     fuel: '',
   });
+
   const getMotos = async () => {
     const res = await fetch('https://63ed61e93d9c852c3f59f7e0.mockapi.io/motos');
     const data = await res.json();
@@ -137,10 +138,18 @@ const Company = () => {
               type={info}
               key={info}
               action={(ev) => {
-                setNewMoto({ ...newMoto, [info]: ev.target.value }), console.log(newMoto);
+                setNewMoto({ ...newMoto, [info]: ev.target.value });
               }}
             />
           ))}
+          <input
+            type="text"
+            value={user}
+            disabled
+
+            //  setNewMoto({...newMoto, company:value})
+            // onChange={(ev) => setNewMoto({ ...newMoto, company: ev.target.value })}
+          />
           <SelectCreate
             options={fuel}
             action={(ev) => setNewMoto({ ...newMoto, fuel: ev.target.value })}

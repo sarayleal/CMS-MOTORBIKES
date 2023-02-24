@@ -1,14 +1,4 @@
-export const typesText = [
-  'image',
-  'brand',
-  'name',
-  'year',
-  'km',
-  'cv',
-  'price',
-  'cc',
-  'company',
-];
+export const typesText = ['image', 'brand', 'name', 'year', 'km', 'cv', 'price', 'cc'];
 
 export const typesSelect = ['carnet', 'fuel', 'type'];
 
