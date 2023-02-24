@@ -1,5 +1,7 @@
 import './MotoCard.css';
 
+import { Link } from 'react-router-dom';
+
 const MotoCard = ({ moto }) => {
   return (
     <figure>
@@ -10,6 +12,9 @@ const MotoCard = ({ moto }) => {
       <h3>{moto.type}</h3>
       <h3>{moto.carnet}</h3>
       <h3>{moto.company}</h3>
+      <button>
+        <Link to={`/Home/${moto.id}`}>More Details</Link>
+      </button>
     </figure>
   );
 };
