@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <h3>Powered by Sebas, Saray, Jesús y Pablo</h3>;
+  return <h3>Powered by Sebas, Saray, Jesús, Pablo y Aura. </h3>;
 };
 
 export default Footer;
