@@ -65,6 +65,19 @@ const Company = () => {
     }
   };
 
+  // DELETE
+
+  const deleteMoto = (id) => {
+    fetch(`https://63ed61e93d9c852c3f59f7e0.mockapi.io/motos/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then(() => {
+      getMotos();
+    });
+  };
+
   useEffect(() => {
     getMotos();
   }, []);
@@ -74,7 +87,12 @@ const Company = () => {
     <main className="Company">
       <div>
         {loaded ? (
-          motos.map((moto) => <MotoCard key={moto.id} moto={moto} />)
+          motos.map((moto) => (
+            <div key={moto.id}>
+              <MotoCard moto={moto} />
+              <button onClick={() => deleteMoto(moto.id)}>Delete</button>
+            </div>
+          ))
         ) : (
           <p>Cargando...</p>
         )}
