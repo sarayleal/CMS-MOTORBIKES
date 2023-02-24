@@ -7,6 +7,8 @@ import InputCreate from '../../components/InputCreate';
 import MotoCard from '../../components/MotoCard/MotoCard';
 import SelectCreate from '../../components/SelectCreate';
 import { carnet, fuel, type, typesText } from '../../data/data.js';
+import InputEdit from '../../components/InputEdit';
+import SelectEdit from '../../components/SelectEdit';
 
 const Company = () => {
   //GET
@@ -14,6 +16,20 @@ const Company = () => {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(null);
   const [newMoto, setNewMoto] = useState({
+    image: '',
+    brand: '',
+    name: '',
+    year: '',
+    type: '',
+    km: '',
+    cv: '',
+    price: '',
+    cc: '',
+    carnet: '',
+    company: '',
+    fuel: '',
+  });
+  const [editMoto, setEditMoto] = useState({
     image: '',
     brand: '',
     name: '',
@@ -78,6 +94,21 @@ const Company = () => {
     });
   };
 
+  /// Edit
+
+  const handleEditMoto = (ev, id) => {
+    ev.preventDefault();
+    fetch(`https://63ed61e93d9c852c3f59f7e0.mockapi.io/motos/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(editMoto),
+    }).then(() => {
+      getMotos();
+    });
+  };
+
   useEffect(() => {
     getMotos();
   }, []);
@@ -91,6 +122,7 @@ const Company = () => {
             <div key={moto.id}>
               <MotoCard moto={moto} />
               <button onClick={() => deleteMoto(moto.id)}>Delete</button>
+              <button onClick={() => setEditMoto(moto)}>Edit</button>
             </div>
           ))
         ) : (
@@ -126,6 +158,35 @@ const Company = () => {
           </button>
         </form>
         {error && <h3>{error}</h3>}
+        <h2>EDIT MOTO</h2>
+        <form onSubmit={(ev) => handleEditMoto(ev, editMoto.id)}>
+          {typesText.map((info) => (
+            <InputEdit
+              value={editMoto[info]}
+              type={info}
+              key={info}
+              action={(ev) => {
+                setEditMoto({ ...editMoto, [info]: ev.target.value });
+              }}
+            />
+          ))}
+          <SelectEdit
+            value={editMoto.fuel}
+            options={fuel}
+            action={(ev) => setEditMoto({ ...editMoto, fuel: ev.target.value })}
+          />
+          <SelectEdit
+            value={editMoto.carnet}
+            options={carnet}
+            action={(ev) => setEditMoto({ ...editMoto, carnet: ev.target.value })}
+          />
+          <SelectEdit
+            value={editMoto.type}
+            options={type}
+            action={(ev) => setEditMoto({ ...editMoto, type: ev.target.value })}
+          />
+          <button type="submit">Edit</button>
+        </form>
       </div>
     </main>
   );
