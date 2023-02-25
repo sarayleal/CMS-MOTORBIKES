@@ -1,4 +1,4 @@
-.HomeDetails{
+.HomeDetails {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 6vh 35vh 1fr;
@@ -7,17 +7,16 @@
   border: 2px solid black;
   width: 100%;
 }
-img{
-    height: 35rem;
+img {
+  height: 35rem;
 }
-.NameMotoDetails{
-    grid-column: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.NameMotoDetails {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
-.NameMotoDetails > h3{
-    font-size: 3rem;
-
+.NameMotoDetails > h3 {
+  font-size: 3rem;
 }

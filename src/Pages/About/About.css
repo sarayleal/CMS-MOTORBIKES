@@ -1,0 +1,79 @@
+/* .About {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+} */
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 82vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    scroll-behavior: smooth;
+  }
+
+.About h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.About h2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.About ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.About li {
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+  scroll-snap-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.About li:hover {
+  transform: scale(1.1);
+}
+
+.About li img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.About li h3 {
+  margin: 0;
+  color: var(--terciary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+
+.About li:hover h3 {
+  transform: rotateZ(45deg);
+}
