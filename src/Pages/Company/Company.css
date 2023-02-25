@@ -13,33 +13,32 @@
 }
 
 .create-edit {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    padding: 2rem;
-    padding-bottom: 5rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .create {
-    display: flex;
-    flex-direction: column;
-    max-width: 20rem;
-    min-width: 15rem;;
-    
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  min-width: 15rem;
 }
 .create > input {
-outline: none;
+  outline: none;
 }
 
 .edit > input {
-    outline: none;
-    }
+  outline: none;
+}
 
 .edit {
-    display: flex;
-    flex-direction: column;
-    max-width: 20rem;
-    min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  min-width: 15rem;
 }
