@@ -4,6 +4,7 @@
   --primary-color: #131413;
   --secondary-color: whitesmoke;
   --terciary-color: #af272a;
+  --cuaternary-color: #9cb494;
   --main-font: 'Roboto', sans-serif;
 }
 
@@ -18,10 +19,10 @@
   color: inherit;
 }
 
-main {
+/* main {
   padding: 2rem;
 }
-
+ */
 a {
   transition: all 0.5s ease-in-out;
 }
