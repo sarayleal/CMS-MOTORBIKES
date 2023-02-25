@@ -44,13 +44,12 @@ a:hover,
   transition: all 0.5s ease-in-out;
 }
 
-.dark > div > .Layout > footer > .brands > div > img{
+.dark > div > .Layout > footer > .brands > div > img {
   filter: invert(100%);
   transition: all 0.5s ease-in-out;
 }
 
-
-.light > div > .Layout > footer > .brands > div > img{
+.light > div > .Layout > footer > .brands > div > img {
   filter: invert(100%);
   transition: all 0.5s ease-in-out;
 }
@@ -92,6 +91,6 @@ button:hover {
   background-color: transparent;
 }
 
-main{
+main {
   min-height: 60vh;
 }
