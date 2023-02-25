@@ -1,8 +1,8 @@
-.Home{
-    width: 100%;
+.Home {
+  width: 100%;
 }
 
-.Home > div > figure > img{
-    width: 300px;
-    height: 200px;
+.Home > div > figure > img {
+  width: 300px;
+  height: 200px;
 }

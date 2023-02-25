@@ -18,13 +18,13 @@
   color: inherit;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 main {
- min-height: 70vh;
- width: 100%;
+  min-height: 70vh;
+  width: 100%;
 }
 
 a {
@@ -57,15 +57,15 @@ a:hover,
   transition: all 0.5s ease-in-out;
 }
 
-body{
+body {
   width: 100%;
 }
 
-html{
+html {
   width: 100%;
 }
 
-#root{
+#root {
   width: 100%;
   padding: 0;
 }
