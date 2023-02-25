@@ -1,5 +1,7 @@
 import './Footer.css';
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer>
@@ -39,7 +41,7 @@ const Footer = () => {
             alt="logopiaggio"
           />
           <img
-            src="https://res.cloudinary.com/dg2xjawnt/image/upload/v1677326475/motos/18255-kawasaki-logo-contour_qndfrn.png"
+            src="https://res.cloudinary.com/dg2xjawnt/image/upload/v1677349780/motos/Kawasaki-Logo_oelaj7.png"
             alt="logokawasaki"
           />
           <img
@@ -62,7 +64,12 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="copyright"></div>
+      <div className="copyright">
+        <h3>©Motosbyke SL 2023 </h3>
+        <h3>
+          Powered by <Link to="/About"> Neoland Group</Link>
+        </h3>
+      </div>
     </footer>
   );
 };
