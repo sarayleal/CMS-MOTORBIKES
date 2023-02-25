@@ -11,13 +11,14 @@ footer {
   width: 100vw;
   height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 footer > .brands > div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 25vw;
   gap: 1rem;
 }
@@ -25,16 +26,42 @@ footer > .brands > div {
 footer > .brands > .column1 > img {
   width: 70px;
   height: 50px;
+  object-fit: cover;
 }
 footer > .brands > .column2 > img {
   width: 70px;
   height: 50px;
+  object-fit: cover;
 }
 footer > .brands > .column3 > img {
   width: 70px;
   height: 50px;
+  object-fit: cover;
 }
 footer > .brands > .column4 > img {
   width: 70px;
   height: 50px;
+  object-fit: cover;
 }
+
+
+/* .column1{
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+.column2{
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+.column3{
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+ .column4  {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+} */
