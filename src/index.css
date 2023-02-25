@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap%27');
-
 :root {
   --primary-color: #2c2d30;
   --secondary-color: whitesmoke;
@@ -18,10 +16,7 @@
   color: inherit;
 }
 
-main {
-  padding: 2rem;
-  min-height: 82vh;
-}
+
 
 a {
   transition: all 0.5s ease-in-out;
