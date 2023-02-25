@@ -18,25 +18,28 @@ const MotoDetails = () => {
   }, []);
 
   return (
-    <main className="HomeDetails">
-      <figure>
+    <main className="Details">
+      <div className="figureDetails">
         <div className="NameMotoDetails">
           <h3>{details.brand}</h3>
           <h3>{details.name}</h3>
         </div>
+        <h3 className="price">{details.price}€</h3>
         <img src={details.image} alt={details.name} />
         <div className="infoMotoDetails">
-          <h3>{details.year}</h3>
-          <h3>{details.type}</h3>
-          <h3>{details.price}</h3>
-          <h3>{details.km}KM</h3>
-          <h3>Carnet:{details.carnet}</h3>
-          <h3>{details.cc}CC</h3>
-          <h3>{details.cv}CV</h3>
-          <h3>{details.fuel}</h3>
-          <h3>{details.company}</h3>
+          <h3 className="year">
+            {' '}
+            <span>Year</span> {details.year}
+          </h3>
+          <h3 className="type">Type {details.type}</h3>
+          <h3 className="km">KM {details.km} KM</h3>
+          <h3 className="carnet">Carnet {details.carnet}</h3>
+          <h3 className="cc">{details.cc} CC</h3>
+          <h3 className="cv"> {details.cv} CV</h3>
+          <h3 className="fuel">Fuel {details.fuel}</h3>
+          <h3 className="company">Company {details.company}</h3>
         </div>
-      </figure>
+      </div>
     </main>
   );
 };
