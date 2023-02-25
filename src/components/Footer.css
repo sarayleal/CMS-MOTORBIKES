@@ -1,39 +1,36 @@
-footer{
-    height: 100%;
-    width: 100vw;
-
-    
+footer {
+  height: 100%;
+  width: 100vw;
 }
 
-.brands{
-    width: 100vw;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+.brands {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer > .brands > div{
-    display: flex;
-    flex-direction: column;
-    width: 25vw;
-    gap: 1rem;
+footer > .brands > div {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  gap: 1rem;
 }
 
-footer > .brands > .column1 > img{
-    width: 70px;
-    height: 50px;
-    
+footer > .brands > .column1 > img {
+  width: 70px;
+  height: 50px;
 }
-footer > .brands > .column2 > img{
-    width: 70px;
-    height: 50px;
+footer > .brands > .column2 > img {
+  width: 70px;
+  height: 50px;
 }
-footer > .brands > .column3 > img{
-    width: 70px;
-    height: 50px;
+footer > .brands > .column3 > img {
+  width: 70px;
+  height: 50px;
 }
-footer > .brands > .column4 > img{
-    width: 70px;
-    height: 50px;
+footer > .brands > .column4 > img {
+  width: 70px;
+  height: 50px;
 }
