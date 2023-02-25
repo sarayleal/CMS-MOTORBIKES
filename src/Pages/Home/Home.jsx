@@ -3,14 +3,14 @@ import './Home.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-//import { useDebounce } from 'use-debounce';
 import MotoCard from '../../components/MotoCard/Motocard';
+import useDebounce from '../../hook/useDebounce';
 
 const Home = () => {
   const [motos, setMotos] = useState([]);
   const [filter, setFilter] = useState([]);
-  //const debounceValue = useDebounce(filter, 1000);
   const [loaded, setLoaded] = useState(false);
+  const debounceValue = useDebounce(filter, 1000);
 
   useEffect(() => {
     axios.get('https://63ed61e93d9c852c3f59f7e0.mockapi.io/motos').then((res) => {
@@ -34,7 +34,7 @@ const Home = () => {
       />
       <div className="grid">
         {loaded ? (
-          filter.map((moto) => <MotoCard key={moto.id} moto={moto} />)
+          debounceValue.map((moto) => <MotoCard key={moto.id} moto={moto} />)
         ) : (
           <p>Cargando...</p>
         )}
