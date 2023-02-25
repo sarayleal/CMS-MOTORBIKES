@@ -27,17 +27,14 @@ const MotoDetails = () => {
         <h3 className="price">{details.price}€</h3>
         <img src={details.image} alt={details.name} />
         <div className="infoMotoDetails">
-          <h3 className="year">
-            {' '}
-            <span>Year</span> {details.year}
-          </h3>
-          <h3 className="type">Type {details.type}</h3>
-          <h3 className="km">KM {details.km} KM</h3>
+          <h3 className="year"> {details.year}</h3>
+          <h3 className="type">{details.type}</h3>
+          <h3 className="km">{details.km} KM</h3>
           <h3 className="carnet">Carnet {details.carnet}</h3>
           <h3 className="cc">{details.cc} CC</h3>
           <h3 className="cv"> {details.cv} CV</h3>
-          <h3 className="fuel">Fuel {details.fuel}</h3>
-          <h3 className="company">Company {details.company}</h3>
+          <h3 className="fuel">{details.fuel}</h3>
+          <h3 className="company">{details.company}</h3>
         </div>
       </div>
     </main>
