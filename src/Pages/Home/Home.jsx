@@ -32,7 +32,7 @@ const Home = () => {
         placeholder="Search..."
         onChange={(ev) => filterFunction(ev.target.value.toLowerCase())}
       />
-      <div className='grid'>
+      <div className="grid">
         {loaded ? (
           filter.map((moto) => <MotoCard key={moto.id} moto={moto} />)
         ) : (
