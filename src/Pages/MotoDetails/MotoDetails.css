@@ -1,31 +1,26 @@
-.Details{
+.Details {
   font-size: 2rem;
   justify-content: center;
   display: flex;
   justify-content: center;
   width: 100%;
- 
 }
 .figureDetails > img {
   height: 20rem;
   margin-top: -3rem;
   right: 50px;
 }
-.NameMotoDetails{
+.NameMotoDetails {
   grid-column: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
-  
 }
 .NameMotoDetails > h3 {
-
   font-size: 3rem;
 }
 .infoMotoDetails {
-
   width: 40rem;
   height: 10rem;
   display: flex;
@@ -34,19 +29,18 @@
   gap: 1.8rem;
   display: flex;
   justify-content: center;
-
 }
 
 .price {
   padding: 0.8rem;
   border-radius: 8px;
   flex-wrap: wrap;
-  width:8rem;
+  width: 8rem;
   font-size: 2rem;
   box-shadow: 5px 5px 15px 5px rgb(184, 178, 178);
   position: relative;
   bottom: 10px;
-  right:180px;
+  right: 180px;
 }
 span {
   font-size: 1rem;
