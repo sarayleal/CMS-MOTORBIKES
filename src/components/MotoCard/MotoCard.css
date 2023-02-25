@@ -1,7 +1,7 @@
 /*Tarjeta*/
-.card{
+.cardMoto{
     min-height: 100%;
-    width: 300px;
+    width: 400px;
     top: 0;
     display: flex;
     justify-content: center;
@@ -11,9 +11,10 @@
     transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
                 transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     box-shadow: 0.4rem 0.4rem 0.6rem var(--primary-color);
+    background: var(--secondary-color);
 }
 
-.card:hover {
+.cardMoto:hover {
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     transform: scale(1.05);
@@ -39,7 +40,7 @@ h3{
     margin-bottom: 20px;
 }
 
-.specifications span{
+.specification{
     border-radius: 20px;
     box-shadow: 5px 10px 20px -3px rgba(217, 217, 217, 0.732);
     padding: 15px;
@@ -60,9 +61,7 @@ h3{
 	background-position: center center;
 }
 
-button {
-    margin-left: 33%;
-    font-size: 12px;
+.content > button {
     color: black;
     font-family: inherit;
     font-weight: 800;
@@ -74,18 +73,19 @@ button {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
+    padding-bottom: 5px;
 }
   
-button:focus:after,
-button:hover:after {
+.content > button:focus:after,
+.content > button:hover:after {
     width: 100%;
     left: 0%;
 }
   
-button:after {
+.content > button:after {
     content: "";
     pointer-events: none;
-    bottom: -2px;
+    bottom: 2px;
     left: 50%;
     position: absolute;
     width: 0%;
@@ -96,3 +96,6 @@ button:after {
     transition-property: width, left;
 }
 
+.content > button > a {
+    font-size: 13px;
+}
