@@ -6,11 +6,9 @@
   min-height: 82vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.7);
-  scroll-behavior: smooth;
+  scroll-behavior: unset;
   background: url(https://res.cloudinary.com/damtbzspb/image/upload/v1677328115/CMS%20MOTORBIKE/Screenshot_20230225_122259_lmzikh_eeg4z1.png);
-  background-size:100%;
- 
+  background-size:cover;
 }
 
 .About h2 {
@@ -18,7 +16,7 @@
   color: orange;
   font-size: 2rem;
   text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .About h2:hover {
@@ -39,9 +37,9 @@
 
 .About li {
   align-items: center;
-  background-color: white;
+  background-color: rgb(227, 214, 171);
   border-radius: 5px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 20px rgba(162, 104, 10, 0.2);
   display: flex;
   flex-direction: column;
   margin: 1rem;
