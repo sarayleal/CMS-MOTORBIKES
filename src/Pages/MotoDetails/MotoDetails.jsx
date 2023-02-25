@@ -18,20 +18,26 @@ const MotoDetails = () => {
   }, []);
 
   return (
-    <figure>
-      <img src={details.image} alt={details.name} />
-      <h3>{details.brand}</h3>
-      <h3>{details.name}</h3>
-      <h3>{details.year}</h3>
-      <h3>{details.type}</h3>
-      <h3>{details.price}</h3>
-      <h3>{details.km}KM</h3>
-      <h3>Carnet:{details.carnet}</h3>
-      <h3>{details.cc}CC</h3>
-      <h3>{details.cv}CV</h3>
-      <h3>{details.fuel}</h3>
-      <h3>{details.company}</h3>
-    </figure>
+    <main className="HomeDetails">
+      <figure>
+        <div className="NameMotoDetails">
+          <h3>{details.brand}</h3>
+          <h3>{details.name}</h3>
+        </div>
+        <img src={details.image} alt={details.name} />
+        <div className="infoMotoDetails">
+          <h3>{details.year}</h3>
+          <h3>{details.type}</h3>
+          <h3>{details.price}</h3>
+          <h3>{details.km}KM</h3>
+          <h3>Carnet:{details.carnet}</h3>
+          <h3>{details.cc}CC</h3>
+          <h3>{details.cv}CV</h3>
+          <h3>{details.fuel}</h3>
+          <h3>{details.company}</h3>
+        </div>
+      </figure>
+    </main>
   );
 };
 

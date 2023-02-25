@@ -7,6 +7,9 @@ header nav ul {
   align-items: center;
   gap: 3rem;
 }
+nav {
+  display: flex;
+}
 
 .modeTheme {
   display: block;
