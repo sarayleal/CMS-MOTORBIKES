@@ -12,9 +12,10 @@
 }
 
 .About h2 {
+    height: 5rem;
     text-decoration-color: rgb(0, 0, 0);
   color: orange;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
 }
@@ -32,6 +33,7 @@
   margin: 2rem 0 0;
   padding: 0;
   box-shadow: 0 15px 20px rgba(141, 104, 10, 0.3);
+  transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
   
 }
 
