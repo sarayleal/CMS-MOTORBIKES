@@ -4,8 +4,9 @@
 }
 .Layout {
   display: grid;
+  width: 100vw;
   grid-template-rows:
-    10vh
+    17vh
     1fr
     8vh;
 }
