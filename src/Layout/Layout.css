@@ -6,7 +6,7 @@
   display: grid;
   width: 100vw;
   grid-template-rows:
-    17vh
+    15vh
     1fr
-    8vh;
+    40vh;
 }
