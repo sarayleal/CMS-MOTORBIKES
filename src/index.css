@@ -89,6 +89,7 @@ button:hover {
   outline: none;
   text-align: center;
   background-color: transparent;
+  padding-bottom: 10px;
 }
 
 main {
