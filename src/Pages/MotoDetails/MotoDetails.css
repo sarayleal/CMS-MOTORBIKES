@@ -1,3 +1,4 @@
+
 @media (max-width: 650px) {
 
   .Details > .figureDetails > .NameMotoDetails > h3 {
@@ -64,8 +65,6 @@
 
   }
 }
-
-
 
 .Details {
   justify-content: center;

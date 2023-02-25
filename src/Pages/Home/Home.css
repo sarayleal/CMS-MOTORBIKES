@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.Home > input {
+  margin-bottom: 3rem;
+}
+
 .Home > div > figure {
   padding: 2rem;
 }
@@ -14,5 +18,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  justify-items: center;
+  grid-gap: 2rem;
   animation: fade 3.5s ease-in-out;
 }
