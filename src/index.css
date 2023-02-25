@@ -62,3 +62,23 @@ html {
   width: 100%;
   padding: 0;
 }
+
+button {
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  border: 1px solid var(--terciary-color);
+  border-radius: 5px;
+}
+
+button:hover {
+  transition: ease-in-out all 1s;
+}
+
+.Home > input {
+  border: none;
+  border-bottom: 1.5px solid var(--terciary-color);
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+}
