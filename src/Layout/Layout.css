@@ -1,9 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .Layout {
-  
   display: grid;
   grid-template-rows:
     10vh
