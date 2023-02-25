@@ -14,4 +14,5 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  animation: fade 3.5s ease-in-out;
 }
