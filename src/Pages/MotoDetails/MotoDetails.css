@@ -1,4 +1,3 @@
-
 figure > .HomeDetails {
   display: grid;
 
@@ -6,18 +5,17 @@ figure > .HomeDetails {
   margin: 2rem;
   border: 2px solid black;
 }
-figure{
-display: grid;
-grid-template-columns: 70vh 30vh;
-grid-template-rows: 6vh 54vh;
+figure {
+  display: grid;
+  grid-template-columns: 70vh 30vh;
+  grid-template-rows: 6vh 54vh;
 
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 img {
   height: 35.5rem;
   grid-column: 2 / 1;
-margin-top: -3rem;
-
+  margin-top: -3rem;
 }
 .NameMotoDetails {
   grid-column: 1;
@@ -26,26 +24,22 @@ margin-top: -3rem;
   align-items: center;
   gap: 2rem;
   grid-column: 1/3;
-
- 
 }
 .NameMotoDetails > h3 {
   font-size: 3rem;
- margin-bottom: 7rem;
- font-size: 4rem;
-
+  margin-bottom: 7rem;
+  font-size: 4rem;
 }
-.infoMotoDetails{
+.infoMotoDetails {
   grid-column: 2/3;
   display: grid;
   place-items: center;
-  margin:1rem 0;
-
+  margin: 1rem 0;
 }
 
-.year{
+.year {
   position: relative;
-  bottom: 40px ;
+  bottom: 40px;
   right: 310px;
   padding: 0.8rem;
   border-radius: 8px;
@@ -53,9 +47,9 @@ margin-top: -3rem;
   width: 6rem;
   background-color: #ff8f0569;
 }
-.type{
+.type {
   position: relative;
-  bottom: 25px ;
+  bottom: 25px;
   right: 200px;
   padding: 0.8rem;
   border-radius: 8px;
@@ -63,9 +57,9 @@ margin-top: -3rem;
   width: 7.5rem;
   background-color: #ff8f053d;
 }
-.carnet{
+.carnet {
   position: relative;
-  bottom: 210px ;
+  bottom: 210px;
   right: 110px;
   padding: 0.8rem;
   border-radius: 8px;
@@ -73,9 +67,9 @@ margin-top: -3rem;
   width: 6.9rem;
   background-color: #ff8f053d;
 }
-.cc{
+.cc {
   position: relative;
-  bottom: 190px ;
+  bottom: 190px;
   right: 20px;
   padding: 0.8rem;
   border-radius: 8px;
@@ -83,9 +77,9 @@ margin-top: -3rem;
   width: 6.9rem;
   background-color: #ff8f053d;
 }
-.cv{
+.cv {
   position: relative;
-  bottom: 160px ;
+  bottom: 160px;
   right: 20px;
   padding: 0.8rem;
   border-radius: 8px;
@@ -93,9 +87,9 @@ margin-top: -3rem;
   width: 6.5rem;
   background-color: #abaece5e;
 }
-.price{
+.price {
   position: relative;
-  bottom: 220px ;
+  bottom: 220px;
   right: 1050px;
   padding: 0.8rem;
   border-radius: 8px;
@@ -103,11 +97,10 @@ margin-top: -3rem;
   width: 10rem;
   font-size: 2.5rem;
   box-shadow: 5px 5px 15px 5px rgb(184, 178, 178);
-
 }
-.km{
+.km {
   position: relative;
-  top: 285px ;
+  top: 285px;
   right: 700px;
   padding: 0.8rem;
   border-radius: 8px;
@@ -115,26 +108,26 @@ margin-top: -3rem;
   width: 7rem;
   background-color: #ff8f053d;
 }
-.fuel{
+.fuel {
   position: relative;
   right: 520px;
- bottom: 55px;
+  bottom: 55px;
   padding: 0.8rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 7rem;
   background-color: #ff8f053d;
 }
-.company{
+.company {
   position: relative;
   right: 200px;
- bottom: 80px;
+  bottom: 80px;
   padding: 0.8rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 10rem;
   background-color: #ff8f053d;
 }
-span{
+span {
   font-size: 1rem;
 }
