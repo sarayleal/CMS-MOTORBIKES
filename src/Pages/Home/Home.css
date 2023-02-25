@@ -2,7 +2,16 @@
   width: 100%;
 }
 
+.Home > div > figure {
+  padding: 2rem;
+}
+
 .Home > div > figure > img {
   width: 300px;
   height: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
