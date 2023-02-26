@@ -40,7 +40,9 @@ const Header = () => {
 
           {user && (
             <li>
-              <button onClick={() => logout()}>Logout</button>
+              <button className="enter" onClick={() => logout()}>
+                Logout
+              </button>
             </li>
           )}
           <li>
