@@ -1,9 +1,12 @@
 import './NotFound.css';
 const NotFound = () => {
   return (
-    <section>
-      <h1>404 Not Found</h1>
-    </section>
+    <main className="error">
+      <img
+        src="https://res.cloudinary.com/dg2xjawnt/image/upload/v1677413393/motos/image-404_wucaoc.webp"
+        alt="not found"
+      />
+    </main>
   );
 };
 
