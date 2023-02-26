@@ -1,34 +1,46 @@
-@media (max-width: 490px) {
+@media (max-width: 746px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .navLogout {
+    padding-left: 10rem;
+  }
+  .hamburguesa {
+    padding-left: 5rem;
+  }
+
+  .moto {
+    padding-left: 5rem;
+  }
   .nav1 {
     display: none;
   }
 }
-@media (max-width: 745px){
-  .nav1 ul li a{
+@media (max-width: 745px) {
+  .nav1 ul li a {
     font-size: 0.8rem;
-    gap:0.5rem;
+    gap: 0.5rem;
   }
 }
 
-@media (min-width: 490px) {
-  .hamburguesa{
+@media (min-width: 746px) {
+  .dropdown {
     display: none;
   }
 }
-@media (max-width:490){
-  .navLogout ul{
+@media (max-width: 747px) {
+  .navLogout ul {
     display: flex;
     padding: 0;
     margin: 0;
-
+  }
 }
-
-}
-
 
 header {
   display: flex;
   height: 100%;
+  width: 100%;
 }
 
 header > .moto > ul > li > a > img {
@@ -38,7 +50,7 @@ header > .moto > ul > li > a > img {
   align-items: center;
   display: flex;
 }
-.moto{
+.moto {
   width: 10rem;
 }
 
@@ -144,10 +156,9 @@ header > nav {
   outline: 0;
 }
 
-.hamburguesa{
+.hamburguesa {
   width: 10rem;
   display: flex;
-
 }
 .hamburguesa img {
   height: 1.5rem;
@@ -170,14 +181,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li:hover > a {
-  background-color: #ddd;
-}
-
-nav ul li:hover a:hover {
-  color: #080808;
-}
-
 nav ul ul {
   display: none;
   position: absolute;
@@ -185,20 +188,17 @@ nav ul ul {
   left: 0;
   background-color: transparent;
   z-index: 1;
-
 }
 
 nav ul ul li {
   float: none;
   width: 100%;
-  
 }
 
 nav ul ul a {
   padding: 10px;
   color: #333;
   font-size: 1rem;
-
 }
 
 nav ul ul a:hover {
@@ -227,11 +227,54 @@ nav ul li.active > ul > li > a {
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
-.navLogout ul li{
+.navLogout ul li {
   display: flex;
   align-items: center;
-  padding: 0;
-  flex-wrap: wrap;
-  gap: 1.5rem;
 
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.navLogout {
+  width: 20%;
+}
+
+.nav1 {
+  width: 60%;
+}
+
+.moto {
+  width: 10%;
+}
+
+.hamburguesa {
+  width: 2rem;
+}
+
+.dark .nav1 > ul > li > a {
+  color: var(--secondary-color);
+}
+
+.dark .nav1 > ul > li > a:hover {
+  color: var(--terciary-color);
+}
+
+.dark .nav1 > ul > li > a.active {
+  color: var(--terciary-color);
+}
+
+.modeTheme {
+  display: flex;
+  margin-right: 4rem;
+}
+.dark .dropdown > img {
+  filter: invert(100%);
+}
+
+.dark .dropdown-menu > li > a {
+  color: var(--secondary-color);
+}
+
+.dropdown-menu > li > a:hover {
+  color: var(--terciary-color);
 }

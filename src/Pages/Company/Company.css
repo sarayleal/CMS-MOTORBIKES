@@ -151,3 +151,8 @@ select::placeholder {
   color: var(--terciary-color);
   background-color: var(--secondary-color);
 }
+
+.main-gap > h1 {
+  font-size: 30px;
+  padding-bottom: 2rem;
+}
