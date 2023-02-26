@@ -66,7 +66,7 @@ const Footer = () => {
       </div>
       <div className="copyright">
         <h3>©Motosbyke SL 2023 </h3>
-        <h3>
+        <h3 className="Neoland">
           Powered by <Link to="/About"> Neoland Group</Link>
         </h3>
       </div>

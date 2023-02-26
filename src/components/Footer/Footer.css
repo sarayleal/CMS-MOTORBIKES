@@ -1,3 +1,30 @@
+@media (max-width: 650px){
+  footer > .brands{
+    width: 440px;
+  }
+  footer > .brands > .column1{
+    width: 60px;
+    height: 200px;
+  }
+
+footer > .brands > .column2{
+  width: 60px;
+  height: 200px;
+}
+footer > .brands > .column3{
+  width: 60px;
+  height: 200px;
+}
+footer > .brands > .column4{
+  width: 60px;
+  height: 200px;
+}
+footer > .copyright > h3{
+  font-size: 0.7rem;
+}
+}
+
+
 footer {
   height: 100%;
   width: 100%;
@@ -28,7 +55,7 @@ footer > .brands > .column1 > img {
   height: 50px;
 }
 footer > .brands > .column2 > img {
-  width: 80px;
+  width: 70px;
   height: 50px;
 }
 footer > .brands > .column3 > img {
@@ -55,4 +82,7 @@ footer > .brands > .column4 > img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Neoland > a {
+  margin-left: 16px;
 }
