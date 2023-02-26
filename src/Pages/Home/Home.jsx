@@ -9,8 +9,8 @@ import useDebounce from '../../hook/useDebounce';
 const Home = () => {
   const [motos, setMotos] = useState([]);
   const [filter, setFilter] = useState([]);
-  const [loaded, setLoaded] = useState(false);
   const debounceValue = useDebounce(filter, 1000);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     axios.get('https://63ed61e93d9c852c3f59f7e0.mockapi.io/motos').then((res) => {
@@ -21,7 +21,11 @@ const Home = () => {
   }, []);
 
   const filterFunction = (value) => {
-    const arrayFilter = motos.filter((moto) => moto.name.toLowerCase().includes(value));
+    const arrayFilter = motos.filter(
+      (moto) =>
+        moto.name.toLowerCase().includes(value) ||
+        moto.brand.toLowerCase().includes(value),
+    );
     setFilter(arrayFilter);
   };
 
