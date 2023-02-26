@@ -50,7 +50,6 @@ a:hover,
 }
 
 .light > div > .Layout > footer > .brands > div > img {
-  filter: invert(100%);
   transition: all 0.5s ease-in-out;
 }
 

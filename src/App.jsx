@@ -2,7 +2,7 @@ import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
 
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import Layout from './Layout/Layout';
