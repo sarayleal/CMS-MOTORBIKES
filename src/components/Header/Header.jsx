@@ -11,7 +11,30 @@ const Header = () => {
   const { user, logout } = useContext(UserContext);
   return (
     <header>
-      <nav>
+      <nav className="hamburguesa">
+        <ul>
+          <li className="dropdown">
+            <img
+              src="https://res.cloudinary.com/depifliz3/image/upload/v1677428433/samples/Motos/image_xece6n.png
+"
+              alt="menu"
+            />
+            <ul className="dropdown-menu">
+              <li>
+                {' '}
+                <a href="/company">company</a>
+              </li>
+              <li>
+                <a href="/about">about</a>
+              </li>
+              <li>
+                <a href="/">home</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav className="moto">
         <ul>
           <li>
             <a href="/">
@@ -21,6 +44,10 @@ const Header = () => {
               />
             </a>
           </li>
+        </ul>
+      </nav>
+      <nav className="nav1">
+        <ul>
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -37,18 +64,25 @@ const Header = () => {
           <li>
             <NavLink to="/About">About</NavLink>
           </li>
-
-          {user && (
+        </ul>
+      </nav>
+      <nav className="navLogout">
+        {user && (
+          <ul>
             <li>
               <button className="enter" onClick={() => logout()}>
                 Logout
               </button>
+              <li>
+                <input
+                  type="checkbox"
+                  className="modeTheme"
+                  onChange={() => toggleTheme()}
+                />
+              </li>
             </li>
-          )}
-          <li>
-            <input type="checkbox" className="modeTheme" onChange={() => toggleTheme()} />
-          </li>
-        </ul>
+          </ul>
+        )}
       </nav>
     </header>
   );
