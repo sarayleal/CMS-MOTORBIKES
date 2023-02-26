@@ -11,6 +11,10 @@ const MotoCard = ({ moto }) => {
         <div className="line"></div>
         <div className="specifications">
           <span className="specification">
+            {moto.brand}
+            <p>Brand</p>
+          </span>
+          <span className="specification">
             {moto.year}
             <p>Year</p>
           </span>

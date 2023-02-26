@@ -1,20 +1,20 @@
 export const typesText = ['image', 'brand', 'name', 'year', 'km', 'cv', 'price', 'cc'];
 
-export const typesSelect = ['carnet', 'fuel', 'type'];
+export const typesSelect = ['Carnet', 'Fuel', 'Type'];
 
-export const fuel = ['-', 'gas', 'diesel', 'electric'];
+export const fuel = ['-', 'Gas', 'Diesel', 'Electric'];
 
-export const carnet = ['-', 'a1', 'a2', 'b', 'a'];
+export const carnet = ['-', 'A1', 'A2', 'B', 'A'];
 
 export const type = [
   '-',
-  'naked',
-  'custom',
-  'scooter',
-  'sport',
-  'supermotard',
-  'trail',
-  'enduro',
-  'cross',
-  'infantil',
+  'Naked',
+  'Custom',
+  'Scooter',
+  'Sport',
+  'Supermotard',
+  'Trail',
+  'Enduro',
+  'Cross',
+  'Infantil',
 ];
