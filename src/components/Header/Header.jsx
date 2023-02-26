@@ -20,15 +20,21 @@ const Header = () => {
               alt="menu"
             />
             <ul className="dropdown-menu">
+              {!user && (
+                <li>
+                  <NavLink to="/Login">Login</NavLink>
+                </li>
+              )}
+              {user && (
+                <li>
+                  <NavLink to="/Company">Company</NavLink>
+                </li>
+              )}
               <li>
-                {' '}
-                <a href="/company">company</a>
+                <a href="/about">About</a>
               </li>
               <li>
-                <a href="/about">about</a>
-              </li>
-              <li>
-                <a href="/">home</a>
+                <a href="/">Home</a>
               </li>
             </ul>
           </li>
@@ -73,17 +79,11 @@ const Header = () => {
               <button className="enter" onClick={() => logout()}>
                 Logout
               </button>
-              <li>
-                <input
-                  type="checkbox"
-                  className="modeTheme"
-                  onChange={() => toggleTheme()}
-                />
-              </li>
             </li>
           </ul>
         )}
       </nav>
+      <input type="checkbox" className="modeTheme" onChange={() => toggleTheme()} />
     </header>
   );
 };

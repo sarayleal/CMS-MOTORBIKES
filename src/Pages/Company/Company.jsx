@@ -69,7 +69,7 @@ const Company = () => {
       !newMoto.company ||
       !newMoto.fuel
     ) {
-      setError('faltan datos');
+      setError('Incomplete form');
     } else {
       setError(null);
       fetch('https://63ed61e93d9c852c3f59f7e0.mockapi.io/motos', {
@@ -118,6 +118,7 @@ const Company = () => {
 
   return (
     <main className="main-gap">
+      <h1>¡Welcome, {user}!</h1>
       <div className="Company">
         {loaded ? (
           motos.map((moto) => (
@@ -150,7 +151,7 @@ const Company = () => {
                 }}
               />
             ))}
-            <input
+            {/* <input
               className="inputBox"
               type="text"
               value={user}
@@ -158,7 +159,7 @@ const Company = () => {
 
               //  setNewMoto({...newMoto, company:value})
               // onChange={(ev) => setNewMoto({ ...newMoto, company: ev.target.value })}
-            />
+            /> */}
             <SelectCreate
               options={fuel}
               action={(ev) => setNewMoto({ ...newMoto, fuel: ev.target.value })}
