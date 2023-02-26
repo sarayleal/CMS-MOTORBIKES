@@ -1,9 +1,6 @@
-
 @media (max-width: 650px) {
-
   .Details > .figureDetails > .NameMotoDetails > h3 {
     font-size: 1.5rem;
-
   }
   .Details > .figureDetails > img {
     height: 6em;
@@ -14,7 +11,6 @@
     font-size: 1rem;
     margin-top: 2rem;
     margin-left: 5rem;
-
   }
   .Details > .figureDetails > .infoMotoDetails {
     display: flex;
@@ -23,7 +19,6 @@
     justify-content: center;
     margin-top: 1rem;
     flex-wrap: wrap;
-
   }
   .Details > .figureDetails > .infoMotoDetails > h3 {
     font-size: 0.7rem;
@@ -55,14 +50,12 @@
   .Details > .figureDetails > .infoMotoDetails > .carnet {
     padding: 0.4rem;
     width: 4.5rem;
-
   }
   .Details > .figureDetails > .infoMotoDetails > .fuel {
     padding: 0.3rem;
     width: 4rem;
     display: flex;
     justify-content: center;
-
   }
 }
 
@@ -75,7 +68,6 @@
 .figureDetails > img {
   height: 20rem;
   justify-content: center;
-
 }
 .NameMotoDetails {
   display: flex;
@@ -109,7 +101,7 @@
   border-radius: 8px;
   width: 6rem;
   font-size: 1.5rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 span {
   font-size: 0.8rem;
@@ -121,54 +113,54 @@ span {
   border-radius: 8px;
   flex-wrap: wrap;
   width: 4.5rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 .type {
   padding: 0.4rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 5rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 .km {
   padding: 0.4rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 6rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 .cc {
   padding: 0.4rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 5rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 .company {
   padding: 0.5rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 6rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 .carnet {
   padding: 0.4rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 5rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 .fuel {
   padding: 0.4rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 4rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
 .cv {
   padding: 0.4rem;
   border-radius: 8px;
   flex-wrap: wrap;
   width: 5rem;
-  box-shadow:-2px 2px 15px 2px rgb(184, 178, 178);
+  box-shadow: -2px 2px 15px 2px rgb(184, 178, 178);
 }
