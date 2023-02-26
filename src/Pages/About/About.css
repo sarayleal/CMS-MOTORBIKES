@@ -8,13 +8,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   min-height: 60vh;
-  gap:2rem ;
-  
+  gap: 2rem;
 }
 
-.about-cards{
+.about-cards {
   display: flex;
   gap: 1rem;
   width: 90%;
@@ -29,105 +28,103 @@
   background: #f5f5f5;
   padding: 2rem 1.5rem;
   border-radius: 12px;
-  transition: box-shadow .3s ease, transform .2s ease;
- }
- 
- .about-info {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.about-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform .2s ease, opacity .2s ease;
- }
- 
- /*Image*/
- .about-avatar {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/*Image*/
+.about-avatar {
   --size: 60px;
   background-position: center;
   background-size: cover;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
   margin-bottom: 1rem;
- }
- 
- 
- /*Card footer*/
- .about-social {
+}
+
+/*Card footer*/
+.about-social {
   transform: translateY(200%);
   display: flex;
   justify-content: space-around;
   width: 100%;
   opacity: 0;
-  transition: transform .2s ease, opacity .2s ease;
- }
- 
- .about-social__item {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.about-social__item {
   list-style: none;
- }
- 
- .about-social__item svg {
+}
+
+.about-social__item svg {
   display: block;
-  fill: #515F65;
+  fill: #515f65;
   cursor: pointer;
-  transition: fill 0.2s ease ,transform 0.2s ease;
- }
- 
- /*Text*/
- .about-title {
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+/*Text*/
+.about-title {
   color: #333;
   font-size: 1rem;
   font-weight: 600;
   line-height: 2rem;
- }
- 
- .about-subtitle {
+}
+
+.about-subtitle {
   color: #859ba8;
   font-size: 0.8em;
- }
- 
- /*Hover*/
- .about:hover {
+}
+
+/*Hover*/
+.about:hover {
   box-shadow: 0 8px 50px #23232333;
- }
- 
- .about:hover .about-info {
+}
+
+.about:hover .about-info {
   transform: translateY(-5%);
- }
- 
- .about:hover .about-social {
+}
+
+.about:hover .about-social {
   transform: translateY(100%);
   opacity: 1;
- }
- 
- .about-social__item svg:hover {
+}
+
+.about-social__item svg:hover {
   fill: #232323;
   transform: scale(1.1);
- }
+}
 
- .about-social__item img:hover {
+.about-social__item img:hover {
   fill: #232323;
   filter: invert(10%);
   transform: scale(1.1);
- }
- 
- .about-avatar:hover {
+}
+
+.about-avatar:hover {
   transform: scale(1.1);
- }
- .about-social__item > a > img{
+}
+.about-social__item > a > img {
   width: 30px;
   height: 30px;
   filter: invert(30%);
- }
+}
 
- .about-social__item {
+.about-social__item {
   width: 35px;
   height: 35px;
- }
+}
 
- .dark > div > div > .About > div > div{
+.dark > div > div > .About > div > div {
   box-shadow: 12px 12px 12px rgb(102, 87, 87);
   border-radius: 20px;
-  
- }
+}
