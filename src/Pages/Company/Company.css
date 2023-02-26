@@ -7,7 +7,29 @@
 
 .Company {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 0 5rem;
+  place-items: center;
+  gap: 2rem;
+}
+.buttonCompany {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.dark .buttonCompany > .enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+ 
+}
+.dark .buttonCompany > .enter:hover{
+  color: var(--terciary-color);
+  background-color: var(--secondary-color);
 }
 
 .Company > div > figure {
@@ -35,7 +57,6 @@
   margin-top: 2rem;
   flex-wrap: wrap;
 }
-
 .create {
   display: flex;
   flex-direction: column;
@@ -78,20 +99,20 @@ form {
 select {
   height: 34px;
   border-radius: 5px;
-  background: white;
+  background: rgba(255, 255, 255, 0.925);
   margin-bottom: 15px;
-  border: none;
   padding: 0 20px;
   font-weight: 300;
   font-size: 14px;
-  color: #4b4b4b;
+  color: #4b4b4b1e;
   width: 200px;
+  border: 1px solid;
 }
 
 .button_submit:hover,
 .feed-form input:hover {
   transform: scale(1.009);
-  box-shadow: 0px 0px 3px 0px #212529;
+  box-shadow: 0px 0px 5px 0px var(--terciary-color);
 }
 
 .button_submit {
@@ -104,4 +125,16 @@ select {
   border: none;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.dark .section_form > form > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+.dark .section_form > form > button:hover{
+  color: var(--terciary-color);
+  background-color: var(--secondary-color);
 }
