@@ -25,9 +25,8 @@
   align-items: center;
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
- 
 }
-.dark .buttonCompany > .enter:hover{
+.dark .buttonCompany > .enter:hover {
   color: var(--terciary-color);
   background-color: var(--secondary-color);
 }
@@ -134,7 +133,7 @@ select {
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
 }
-.dark .section_form > form > button:hover{
+.dark .section_form > form > button:hover {
   color: var(--terciary-color);
   background-color: var(--secondary-color);
 }
