@@ -84,7 +84,6 @@ detalles del input */
   margin-top: 36px;
   display: flex;
   flex-direction: column;
-
   width: 200px;
 }
 
@@ -107,6 +106,20 @@ select {
   color: #4b4b4b1e;
   width: 200px;
   border: 1px solid;
+}
+
+.feed-form input, select::placeholder{
+  color: var(--primary-color);
+  border-color: #4b4b4b1e;
+}
+
+.feed-form select > option{
+  color: var(--primary-color);
+}
+
+.feed-form select{
+  color: var(--primary-color);
+  border-color: #4b4b4b1e;
 }
 
 .button_submit:hover,
