@@ -123,12 +123,14 @@ const Company = () => {
           motos.map((moto) => (
             <div key={moto.id}>
               <MotoCard moto={moto} />
-              <button className="enter" onClick={() => deleteMoto(moto.id)}>
-                Delete
-              </button>
-              <button className="enter" onClick={() => setEditMoto(moto)}>
-                Edit
-              </button>
+              <div className="buttonCompany">
+                <button className="enter" onClick={() => deleteMoto(moto.id)}>
+                  Delete
+                </button>
+                <button className="enter" onClick={() => setEditMoto(moto)}>
+                  Edit
+                </button>
+              </div>
             </div>
           ))
         ) : (
