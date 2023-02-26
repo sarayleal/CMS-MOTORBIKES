@@ -117,14 +117,18 @@ const Company = () => {
   }, []);
 
   return (
-    <main>
+    <main className="main-gap">
       <div className="Company">
         {loaded ? (
           motos.map((moto) => (
             <div key={moto.id}>
               <MotoCard moto={moto} />
-              <button onClick={() => deleteMoto(moto.id)}>Delete</button>
-              <button onClick={() => setEditMoto(moto)}>Edit</button>
+              <button className="enter" onClick={() => deleteMoto(moto.id)}>
+                Delete
+              </button>
+              <button className="enter" onClick={() => setEditMoto(moto)}>
+                Edit
+              </button>
             </div>
           ))
         ) : (
@@ -132,9 +136,9 @@ const Company = () => {
         )}
       </div>
       <div className="create-edit">
-        <div>
+        <div className="section_form">
           <h2>CREATE MOTO</h2>
-          <form className="create" onSubmit={(ev) => createMotos(ev)}>
+          <form className="create feed-form" onSubmit={(ev) => createMotos(ev)}>
             {typesText.map((info) => (
               <InputCreate
                 type={info}
@@ -145,6 +149,7 @@ const Company = () => {
               />
             ))}
             <input
+              className="inputBox"
               type="text"
               value={user}
               disabled
@@ -165,15 +170,22 @@ const Company = () => {
               action={(ev) => setNewMoto({ ...newMoto, type: ev.target.value })}
             />
 
-            <button onClick={() => console.log(newMoto)} type="submit">
+            <button
+              className="enter button_submit"
+              onClick={() => console.log(newMoto)}
+              type="submit"
+            >
               Create
             </button>
           </form>
           {error && <h3>{error}</h3>}
         </div>
-        <div>
+        <div className="section_form">
           <h2>EDIT MOTO</h2>
-          <form className="edit" onSubmit={(ev) => handleEditMoto(ev, editMoto.id)}>
+          <form
+            className="edit feed-form"
+            onSubmit={(ev) => handleEditMoto(ev, editMoto.id)}
+          >
             {typesText.map((info) => (
               <InputEdit
                 value={editMoto[info]}
@@ -199,7 +211,9 @@ const Company = () => {
               options={type}
               action={(ev) => setEditMoto({ ...editMoto, type: ev.target.value })}
             />
-            <button type="submit">Edit</button>
+            <button className="enter button_submit" type="submit">
+              Edit
+            </button>
           </form>
         </div>
       </div>
