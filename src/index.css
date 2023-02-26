@@ -28,13 +28,13 @@ a:hover,
 }
 
 .light {
-  background-color: var(--secondary-color);
+  background-color: white;
   color: var(--primary-color);
   width: 100%;
 }
 
 .dark {
-  background-color: var(--primary-color);
+  background-color: black;
   color: var(--secondary-color);
   width: 100%;
 }
